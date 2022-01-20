@@ -1,6 +1,5 @@
 import fetch from 'node-fetch';
 
-//just checking that this gets committed
 const API_URL = "http://localhost:3000/todos/"
 
 async function createTodo(task) {
