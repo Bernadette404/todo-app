@@ -26,7 +26,7 @@ async function updateTodo(id, payload) {
     const requestOptions = {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ payload })
+        body: JSON.stringify(payload)
     };
     const response = await fetch(`${API_URL}${id}`, requestOptions);
     const data = await response.json();
